@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800&display=swap");
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Lato", sans-serif;
+  color: #00171A;
+  background-color: #fff;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 140%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.5vmax;
+  text-align: center;
+  color: #00A3B9;
+}
+
+h2 {
+  font-size: 3vmax;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+  width: 100vw;
+  padding: 72px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Section 1 */
+#section1 {
+  background-color: #f2f7f8;
+  padding: 64px 72px;
+}
+
+#section1 #content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#pin {
+  width: 100%;
+  flex-shrink: 0;
+  height: 420px;
+  padding-top: 64px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  #pin {
+    width: 45%;
+    height: 100vh;
+    padding: 10vh 0;
+  }
+  #section1 #content {
+    flex-direction: row;
+  }
+}
+
+#pin > img {
+  height: 100%;
+  width: 100%;
+  background: #00A3B9;;
+}
+
+#section1 ul {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-top: 10vh;
+}
+
+#section1 li {
+  margin-bottom: 10vh;
+  font-size: 1.8vmax;
+  list-style: none;
+  padding: 0;
+  line-height: 180%;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  #section1 li {
+    margin-bottom: 20vh;
+    font-size: 1.8vmax;
+    padding-left: 64px;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 72px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: smaller;
+}
